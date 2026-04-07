@@ -1,54 +1,122 @@
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+.header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
 }
 
-header {
-    background-color: #4CAF50;
+.footer {
+    background: #4CAF50;
     color: white;
-    padding: 15px 20px;
     text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 nav {
-    margin: 20px 0;
+    background: #000000;
+    overflow: hidden;
 }
 
 nav a {
-    color: #FFF;
-    padding: 14px 20px;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    display: inline-block;
 }
 
 nav a:hover {
-    background-color: #3e8e41;
+    background: #4CAF50;
 }
 
-.product-card {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 16px;
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    padding: 20px;
     margin: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
     text-align: center;
-    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
-.product-card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.button:hover {
+    background-color: #45a049;
 }
 
-.product-img {
-    width: 100%;
-    height: auto;
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input, .form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-@media (max-width: 600px) {
-    nav {
-        display: block;
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
     }
-    .product-card {
-        margin: 5px;
+}
+
+@media (max-width: 480px) {
+    .header, .footer {
+        font-size: 18px;
     }
 }
