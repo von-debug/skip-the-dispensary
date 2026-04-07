@@ -4,40 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cannabis Products</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        .product { border: 1px solid #ccc; padding: 16px; margin: 16px; display: inline-block; width: calc(33% - 64px); }
-        .product img { max-width: 100%; height: auto; }
-        .add-to-cart { background-color: green; color: white; padding: 10px; border: none; cursor: pointer; }
-    </style>
 </head>
 <body>
-    <h1>Cannabis Products</h1>
-    <div class="product">
-        <img src="https://example.com/image1.jpg" alt="Product 1">
-        <h2>Product Name 1</h2>
-        <p>Description of product 1.</p>
-        <p>Price: $10.00</p>
-        <button class="add-to-cart" onclick="addToCart('Product Name 1', 10.00)">Add to Cart</button>
-    </div>
-    <div class="product">
-        <img src="https://example.com/image2.jpg" alt="Product 2">
-        <h2>Product Name 2</h2>
-        <p>Description of product 2.</p>
-        <p>Price: $12.00</p>
-        <button class="add-to-cart" onclick="addToCart('Product Name 2', 12.00)">Add to Cart</button>
-    </div>
-    <div class="product">
-        <img src="https://example.com/image3.jpg" alt="Product 3">
-        <h2>Product Name 3</h2>
-        <p>Description of product 3.</p>
-        <p>Price: $15.00</p>
-        <button class="add-to-cart" onclick="addToCart('Product Name 3', 15.00)">Add to Cart</button>
-    </div>
-    <script>
-        function addToCart(productName, price) {
-            alert(productName + ' has been added to your cart for $' + price);
-        }
-    </script>
+    <h1>Available Cannabis Products</h1>
+    <ul>
+        <li>
+            <h2>Northern Lights</h2>
+            <img src="placeholder.jpg" alt="Northern Lights">
+            <p>Price: $15/gram</p>
+            <p>Description: A popular and potent strain known for its relaxing effects.</p>
+            <p>THC: 20%, CBD: 1%</p>
+            <p>Strain Type: Indica</p>
+            <p>Effects: Relaxation, Happiness, Sleepiness</p>
+            <button>Add to Cart</button>
+        </li>
+        <li>
+            <h2>OG Kush</h2>
+            <img src="placeholder.jpg" alt="OG Kush">
+            <p>Price: $18/gram</p>
+            <p>Description: A classic strain that provides stress relief and euphoria.</p>
+            <p>THC: 25%, CBD: 0.5%</p>
+            <p>Strain Type: Hybrid</p>
+            <p>Effects: Happiness, Euphoria, Relaxation</p>
+            <button>Add to Cart</button>
+        </li>
+        <li>
+            <h2>Blue Dream</h2>
+            <img src="placeholder.jpg" alt="Blue Dream">
+            <p>Price: $16/gram</p>
+            <p>Description: A balanced strain that is great for new users and seasoned veterans alike.</p>
+            <p>THC: 24%, CBD: 1%</p>
+            <p>Strain Type: Hybrid</p>
+            <p>Effects: Relaxation, Euphoria, Creativity</p>
+            <button>Add to Cart</button>
+        </li>
+        <li>
+            <h2>Sour Diesel</h2>
+            <img src="placeholder.jpg" alt="Sour Diesel">
+            <p>Price: $17/gram</p>
+            <p>Description: An energizing strain that is perfect for daytime use.</p>
+            <p>THC: 22%, CBD: 0.5%</p>
+            <p>Strain Type: Sativa</p>
+            <p>Effects: Energetic, Uplifting, Creative</p>
+            <button>Add to Cart</button>
+        </li>
+        <li>
+            <h2>Gelato</h2>
+            <img src="placeholder.jpg" alt="Gelato">
+            <p>Price: $19/gram</p>
+            <p>Description: A sweet strain with relaxing effects that’s perfect for unwinding.</p>
+            <p>THC: 21%, CBD: 0%</p>
+            <p>Strain Type: Hybrid</p>
+            <p>Effects: Relaxation, Euphoria, Happiness</p>
+            <button>Add to Cart</button>
+        </li>
+        <li>
+            <h2>White Widow</h2>
+            <img src="placeholder.jpg" alt="White Widow">
+            <p>Price: $14/gram</p>
+            <p>Description: A classic strain noted for its balanced effects and ease of growth.</p>
+            <p>THC: 18%, CBD: 2%</p>
+            <p>Strain Type: Hybrid</p>
+            <p>Effects: Relaxation, Happiness, Uplifting</p>
+            <button>Add to Cart</button>
+        </li>
+    </ul>
 </body>
 </html>
